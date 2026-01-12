@@ -5,8 +5,6 @@
 ## 3. set the value of the mean
 ## 4. get the value of the mean
 
-## Write a short comment describing this function
-
 makeVector <- function(x = numeric()) {
                 m <- NULL
                 set <- function(y) {
@@ -16,9 +14,12 @@ makeVector <- function(x = numeric()) {
                 get <- function() x
                 setmean <- function(mean) m <<- mean
                 getmean <- function() m
-                list(set = set, get = get,
-                     setmean = setmean,
-                     getmean = getmean)
+                list(
+                  set = set,
+                  get = get,
+                  setmean = setmean,
+                  getmean = getmean
+                  )
 }
 
 
